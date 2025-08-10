@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script src="src/index.js" defer></script>
+    <link rel="stylesheet" href="public/style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrente x Tensao</title>
+</head>
+<body>
+    <div class="conteiner">
+        <main>
+            <section id="modelos">
+                <h1>Tensao da bateria</h1>
+                <div id="check">
+                    <input type="checkbox" id="doze" name="bat" class="tensaoBat" >12</input>
+                    <input type="checkbox" id="seis" name="bat" class="tensaoBat">6</input>
+                    <input type="checkbox" id="dois" name="bat" class="tensaoBat">2</input>
+                </div>
+            </section>
+           <section id="dadosDeEntrada">
+               <div id="inputs">
+                   <label for="CB">Corrente bateria(AH):</label>
+                   <input type="number" name="" id="CB">
+                   <label for="series">Series:</label>
+                   <input type="number" name="" id="series">
+                   <label for="paralelos">Paralelos:</label>
+                   <input type="number" name="" id="paralelos">
+               </div>
+               <button type="submit" id="enviar">calcular</button>
+            </section>
+
+           <div id="resultado">
+            <p id="TT"></p>
+            <p id="TC"></p>
+           </div>
+        </main>
+    </div>
+</body>
+</html>

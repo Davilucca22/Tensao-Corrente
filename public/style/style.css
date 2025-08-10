@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit';
+}
+
+body{
+    background-color: rgb(194, 194, 194) ;
+
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#modelos{
+    background-color:rgb(73, 55, 139) ;
+    color:rgb(194, 194, 194) ;
+    width: 100vw;
+    margin: 0 auto 20px  auto;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px gray;
+}
+
+#check{
+    font-size: 16pt;
+}
+
+#check input{
+    margin: auto 10px auto 10px;
+}
+
+#dadosDeEntrada{
+    color: rgb(73, 55, 139);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+#dadosDeEntrada label{
+    display: block;
+    margin: 5px;
+    font-size: 16pt;
+    font-weight: 600;
+}
+
+#dadosDeEntrada input{
+    text-align: center;
+    width: 40%;
+    height: 30px;
+    font-size: 16pt;
+    border-radius: 5px;
+    border: 1px;
+    box-shadow: 0 0 5px gray;
+    padding: 1px;
+}
+
+#dadosDeEntrada input:focus{
+    outline: 0;
+
+}
+
+#inputs{
+    width: 100%;
+}
+
+button{
+    width: 200px;
+    height: 30px;
+    margin: 60px;
+    font-size: 16pt;
+    border-radius: 5px;
+    box-shadow: 0 0 5px gray;
+    border: 0;
+    background-color:rgb(73, 55, 139) ;
+    color:rgb(194, 194, 194) ;
+
+}
+
+#resultado{
+    width: 100vw;
+    text-align: center;
+}
+
+#resultado p {
+    margin: 10px;
+    font-size: 17pt;
+    font-weight: 600;
+    color:rgb(73, 55, 139) ;
+}
