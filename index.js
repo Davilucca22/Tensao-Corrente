@@ -54,10 +54,15 @@ function calculaCorrente(AH,paralelo){
 
 }
 
+function totalBat(series,paralelos){
+    return series * paralelos
+}
+
 function mostraDados(elpai){
     apagaP()
     const corrente = calculaCorrente(AH.value,paralelos.value)
     const tensao = calculaTensao(series.value)
+    const total = totalBat(series.value,paralelos.value)
 
     const textoCorrente = document.createElement('p')
     textoCorrente.id = 'TC'
@@ -67,8 +72,14 @@ function mostraDados(elpai){
     textotensao.id = 'TT'
     textotensao.innerText = `Tensao de Carga: ${tensao}`
 
+    const totalbaterias = document.createElement('p')
+    totalbaterias.id = 'total'
+    totalbaterias.innerText = `Total de baterias: ${total}`
+
+
     elpai.appendChild(textoCorrente)
     elpai.appendChild(textotensao)
+    elpai.appendChild(totalbaterias)
 }
 
 function apagaP(){
