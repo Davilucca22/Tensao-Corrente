@@ -85,7 +85,9 @@ function mostraDados(elpai){
 function apagaP(){
     const TT = document.querySelector('#TT')
     const TC = document.querySelector('#TC')
+    const total = document.querySelector('#total')
 
+    total.remove()
     TT.remove()
     TC.remove()
 }
