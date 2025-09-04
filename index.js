@@ -55,7 +55,11 @@ function calculaCorrente(AH,paralelo){
 }
 
 function totalBat(series,paralelos){
-    return series * paralelos
+    if(paralelos != 0){
+        return series * paralelos
+    }
+
+    return series
 }
 
 function mostraDados(elpai){
